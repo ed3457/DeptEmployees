@@ -2,10 +2,42 @@
 //
 
 #include <iostream>
+#include "Department.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+   // creation of a list of employees 
+	int deptSize = 2;
+	Employee* elist = new Employee[deptSize];
+	// init the list 
+	string name;
+	float sal;
+	for (int i = 0;i < deptSize;i++)
+	{ 
+		cin >> name;
+		cin >> sal;
+	
+		elist[i].setName(name);
+		elist[i].setSalary(sal);
+
+	}
+
+	Department HR("HR", elist);
+
+
+	float salSum = 0;
+
+
+	for (int i = 0;i < deptSize; i++)
+	{
+
+		salSum += HR.getEmpList()[i].getSalary();
+
+	}
+
+	float avg = salSum / deptSize;
+	cout << avg;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
