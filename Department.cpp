@@ -22,3 +22,8 @@ Department::Department(string n, Employee* elist)
     empList = elist;
 
 }
+
+Department::~Department()
+{
+    delete[] empList;
+}

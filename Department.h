@@ -14,5 +14,6 @@ public:
 	Employee* getEmpList();
 
 	Department(string n, Employee* elist); 
+	~Department();
 };
 

@@ -27,11 +27,11 @@ int main()
 
 	float salSum = 0;
 
-
+	Employee* tempList = HR.getEmpList();
 	for (int i = 0;i < deptSize; i++)
 	{
 
-		salSum += HR.getEmpList()[i].getSalary();
+		salSum += tempList[i].getSalary();
 
 	}
 
