@@ -15,12 +15,20 @@ Employee* Department::getEmpList()
     return empList;
 }
 
-Department::Department(string n, Employee* elist)
+Department::Department(string n, Employee* elist, int numberOfEmployees)
 {
     setName(n);
 
-    empList = elist; // shallow copy 
+    // deep copy 
+    empList = new Employee[numberOfEmployees]; 
 
+    for (int i = 0;i < numberOfEmployees; i++)
+    {
+
+        empList[i].setName(elist[i].getName());
+        empList[i].setSalary(elist[i].getSalary());
+
+    }
 }
 
 Department::~Department()

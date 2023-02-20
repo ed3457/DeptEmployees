@@ -13,7 +13,7 @@ public:
 
 	Employee* getEmpList();
 
-	Department(string n, Employee* elist); 
+	Department(string n, Employee* elist, int numberOfEmployees); 
 	~Department();
 };
 

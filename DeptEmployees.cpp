@@ -22,7 +22,7 @@ int main()
 
 	}
 
-	Department HR("HR", elist);
+	Department HR("HR", elist,deptSize);
 
 
 	float salSum = 0;
