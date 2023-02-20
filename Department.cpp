@@ -19,7 +19,7 @@ Department::Department(string n, Employee* elist)
 {
     setName(n);
 
-    empList = elist;
+    empList = elist; // shallow copy 
 
 }
 
