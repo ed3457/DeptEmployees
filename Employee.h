@@ -17,6 +17,7 @@ public:
 
 	Employee();
 	Employee(string n, float sal); 
+	Employee(const Employee& originalCopy);// copy constructor 
 
 };
 

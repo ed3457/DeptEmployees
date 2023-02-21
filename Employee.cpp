@@ -32,3 +32,10 @@ Employee::Employee(string n, float sal)
 	setSalary(sal);
 
 }
+
+Employee::Employee(const Employee& originalCopy)
+{
+	setName(originalCopy.name);
+	setSalary(originalCopy.salary); 
+
+}

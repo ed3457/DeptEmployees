@@ -24,6 +24,7 @@ int main()
 
 	Department HR("HR", elist,deptSize);
 
+	delete[] elist; 
 
 	float salSum = 0;
 
